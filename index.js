@@ -70,7 +70,7 @@ const todoList = () => {
       list.forEach(i => {
         if(i.dueDate == yesterday)
         {
-            y+="[ ]"+" "+i.title+" "+yesterday+"\n"
+            y+="[ ]"+" "+i.title+" "+yesterday
         }
         else if(i.dueDate == today)
         {
@@ -79,7 +79,7 @@ const todoList = () => {
               y+="[x]"+" "+i.title+"\n"
             }
             else{
-              y+= "[ ]"+" "+i.title+"\n"
+              y+= "[ ]"+" "+i.title
             }
         }
         else if(i.dueDate == tomorrow)
